@@ -1,0 +1,41 @@
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px;
+}
+
+.login-page .logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.login-page .form-container {
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.login-page .form-flex {
+  display: grid;
+}
+
+.login-page .form-flex form {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+/*# sourceMappingURL=page.css.map */
+
+/*
+./src/app/(pages)/posts/[postid]/page.tsx (61:44, 62:56, 79:40, 88:54)
+./src/app/(pages)/register/page.tsx (86:21)
+./src/app/(pages)/user/[userid]/page.tsx (29:34, 145:42)
+./src/app/_Components/CreatePost/createPost.tsx (92:30)
+./src/app/_Components/userposts/UPosts.tsx (49:72)
+./src/store/slices/slice.ts (22:21)
+*/

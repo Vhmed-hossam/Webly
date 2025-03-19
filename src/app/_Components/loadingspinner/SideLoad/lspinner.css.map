@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "sources": [
+    "lspinner.scss",
+    "lspinner.css"
+  ],
+  "names": [],
+  "mappings": "AACA;EACE,6BAAA;EACA,kBAAA;EACA,6BAAA;EACA,WAAA;EACA,YAAA;EACA,oCAAA;ACAF;;ADGA;EACE;IAAO,uBAAA;ECCP;EDAA;IAAK,yBAAA;ECGL;AACF",
+  "file": "lspinner.css"
+}

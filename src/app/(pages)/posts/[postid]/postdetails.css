@@ -1,0 +1,52 @@
+.postdetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 40px;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  position: relative;
+}
+
+@media (max-width: 1200px) {
+  .postdetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.postdetails .post {
+  height: fit-content;
+}
+
+.container {
+  padding: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.firstcomment {
+  color: #DC143C;
+  padding: 10px;
+}
+
+.comments::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FCE8EC;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #DC143C;
+  border-radius: 15px;
+  border: 1px solid #FCE8EC;
+}
+
+/*# sourceMappingURL=postdetails.css.map */

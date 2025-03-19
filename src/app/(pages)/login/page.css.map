@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "sources": [
+    "page.scss",
+    "page.css"
+  ],
+  "names": [],
+  "mappings": "AACA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,sBAAA;EACA,aAAA;ACAF;ADEE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,mBAAA;ACAJ;ADGE;EACE,aAAA;EACA,mBAAA;ACDJ;ADIE;EACE,aAAA;ACFJ;ADII;EACE,aAAA;EACA,WAAA;EACA,gDAAA;EACA,SAAA;ACFN",
+  "file": "page.css"
+}

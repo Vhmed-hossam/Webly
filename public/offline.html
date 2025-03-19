@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stylish Button</title>
+    <style>
+      body {
+        color: #ededed;
+        background: #0d0003;
+        font-family: Arial, Helvetica, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      .btn {
+        display: inline-block;
+        padding: 12px 24px;
+        font-size: 16px;
+        color: #fce8ec;
+        background: #dc143c;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 10px rgba(255, 65, 108, 0.3);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .btn:hover {
+        background: #dc143c;
+        box-shadow: 0 6px 15px rgba(255, 65, 108, 0.5);
+      }
+
+      .btn:active {
+        transform: scale(0.98);
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="Webly Logo.png" />
+      <h2>Hello user</h2>
+      <h4>You are Currently offline</h4>
+      <a href="/"><button class="btn">Retry</button></a>
+    </div>
+  </body>
+</html>

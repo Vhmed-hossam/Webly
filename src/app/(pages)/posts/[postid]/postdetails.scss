@@ -1,0 +1,50 @@
+@import '../../../vars.scss';
+
+.postdetails {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 40px;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    position: relative;
+
+    @media (max-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .post {
+        height: fit-content;
+    }
+}
+
+.container {
+    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.firstcomment {
+    color: $primary;
+    padding: 10px;
+}
+
+.comments::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: $Rwhite;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $primary;
+    border-radius: 15px;
+    border: 1px solid $Rwhite;
+}
