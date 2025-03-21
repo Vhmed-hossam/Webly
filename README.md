@@ -79,9 +79,8 @@ Webly aims to revolutionize the way people connect and share their experiences o
 
 ## 🔗 Live Demo
 
-<a href="https://weblyapp.vercel.app/">Webly</a>
+<a href="https://weblyapp.vercel.app/" target="_blank">Webly</a>
 
 ---
 
 © 2025 Webly™ by Ahmed. All Rights Reserved.
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
