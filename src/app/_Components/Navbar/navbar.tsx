@@ -36,7 +36,7 @@ export default function NavBar() {
     null
   );
   const [isMounted, setIsMounted] = React.useState<boolean>(false);
-useEffect(() => {
+  useEffect(() => {
     setIsMounted(true);
     if (isLoggedIn && !user) {
       dispatch(getUserData());
@@ -133,15 +133,16 @@ useEffect(() => {
                 }}
               >
                 {isLoggedIn ? (
-                  <Link href="/posts" onClick={handleCloseNavMenu}>
-                    Posts
-                  </Link>
-                ) : (
                   <>
                     <Link href="/register" onClick={handleCloseNavMenu}>
                       Register
                     </Link>
                     <Link href="/login">Login</Link>
+                  </>
+                ) : (
+                  <>
+                    <Link href={`/user/${user?._id}`}>Profile</Link>
+                    <Link href="/posts">Posts</Link>
                   </>
                 )}
               </Box>
