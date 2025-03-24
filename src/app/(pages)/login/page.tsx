@@ -3,10 +3,9 @@ import * as React from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
-import Link from "next/link";
 
 // Material UI
-import { Button, Container, TextField, Typography } from "@mui/material";
+import { Button, Container, TextField } from "@mui/material";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import IconButton from "@mui/material/IconButton";
@@ -14,7 +13,6 @@ import InputAdornment from "@mui/material/InputAdornment";
 
 // Redux and it's Branches
 import { useDispatch } from "react-redux";
-import { AppDispatch } from "@/store/store";
 import { getUserData, login } from "@/store/slices/authslice";
 
 // Interfaces
@@ -32,6 +30,7 @@ import * as Yup from "yup";
 import axios from "axios";
 import Cookie from "js-cookie";
 import toast from "react-hot-toast";
+import { AppDispatch } from "@/store/store";
 
 export default function Login() {
   const { push } = useRouter();
@@ -67,8 +66,8 @@ export default function Login() {
         values
       );
       if (data.message === "success") {
-        dispatch(login(data.token)); // Dispatch the login action
-        await dispatch(getUserData()); // Dispatch getUserData after setting the token
+        dispatch(login(data.token));
+        await dispatch(getUserData());
         push("/");
         toast.success("Login successfull!");
       }
