@@ -31,7 +31,7 @@ const authslice = createSlice({
     },
     login(state, action) {
       state.isLoggedIn = true;
-      Cookie.set("token", action.payload);
+      Cookie.set("token", action.payload , { expires: 30 });
     },
   },
   extraReducers(builder) {
