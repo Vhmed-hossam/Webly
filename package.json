@@ -1,6 +1,6 @@
 {
   "name": "webly",
-  "version": "0.1.6",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
@@ -17,6 +17,7 @@
     "@mui/material": "^6.4.4",
     "@mui/material-nextjs": "^6.4.3",
     "@reduxjs/toolkit": "^2.5.1",
+    "@vercel/speed-insights": "^1.2.0",
     "axios": "^1.7.9",
     "emoji-picker-element": "^1.26.1",
     "emoji-picker-react": "^4.12.0",
