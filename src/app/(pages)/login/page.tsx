@@ -219,14 +219,6 @@ export default function Login() {
               {IsLoading ? <Spinner /> : "Log in"}
             </Button>
           </form>
-          <Typography
-            variant="body2"
-            sx={{ textAlign: "right", marginTop: "10px" }}
-            component={Link}
-            href={"/changepassword"}
-          >
-            Forget Password?
-          </Typography>
         </div>
       </Container>
     </div>
