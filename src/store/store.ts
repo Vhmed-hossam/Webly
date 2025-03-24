@@ -1,13 +1,18 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { persistStore, persistReducer } from "redux-persist";
-import storage from "redux-persist/lib/storage";
 import { postsReducer } from "./slices/slice";
 import { authReducer } from "./slices/authslice";
-
+import createCookieStorage from "redux-persist-cookie-storage";
+import Cookies from "js-cookie";
 const persistConfig = {
   key: "auth",
-  storage, // Uses localStorage to persist auth state
-  whitelist: ["user", "isLoggedIn"], // Persist only these fields
+  storage: createCookieStorage({
+    cookies: Cookies,
+    expiration: {
+      default: 30,
+    },
+  }),
+  whitelist: ["user", "isLoggedIn"], 
 };
 
 const persistedAuthReducer = persistReducer(persistConfig, authReducer);
@@ -15,7 +20,7 @@ const persistedAuthReducer = persistReducer(persistConfig, authReducer);
 export const store = configureStore({
   reducer: {
     posts: postsReducer,
-    auth: persistedAuthReducer, // Persisted auth reducer
+    auth: persistedAuthReducer,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({ serializableCheck: false }),
