@@ -75,7 +75,7 @@ useEffect(() => {
       );
       if (data.message === "success") {
         toast.success("Password changed successfully!");
-        Cookie.set("token", data.token);
+        Cookie.set("token", data.token , { expires: 30 });
       }
     } catch {
       seterrmsg("Incorrect Password");
