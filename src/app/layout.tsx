@@ -25,7 +25,6 @@ import { useServiceWorker } from "@/hooks/useServiceWorker";
 // Others
 import { Geist, Geist_Mono } from "next/font/google";
 import { Toaster } from "react-hot-toast";
-import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -68,7 +67,6 @@ export default function RootLayout({
                 {children}
                 <Footer />
                 <Toaster />
-                <SpeedInsights/>
               </PersistGate>
             </Provider>
           </ThemeProvider>
