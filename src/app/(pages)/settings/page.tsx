@@ -327,7 +327,7 @@ export default function Settings() {
         sx={{ textAlign: "center", mt: 4 }}
         color="primary.light"
       >
-        Version 1.00.00
+        Version 1.10.00
       </Typography>
       <Dialog open={openDialog} onClose={handleDialogClose}>
         <DialogTitle>Coming Soon</DialogTitle>
