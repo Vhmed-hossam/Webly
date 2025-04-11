@@ -69,7 +69,7 @@ export default function UserId() {
 console.log(typeof setRes);
   return (
     <>
-      <Container sx={{ padding: "20px" }}>
+      <Container sx={{ padding: "20px", minHeight: calc(100vh-(70-68.5) }}>
         <Box
           sx={{
             display: "flex",
